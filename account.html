@@ -1,0 +1,215 @@
+<!-- This is my html and css website -->
+<!-- this is the account page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- author -->
+    <meta content="Davjot Singh" name="description">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- linking the font awesome cdn link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- font family to the li items under logo class(home,etc) -->
+    <!-- font family = Staatliches -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- font family to h1 tag under first col-2 -->
+    <!-- font family = Hanalei Fill -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <!-- font family to p tag under first col-2 -->
+    <!-- font family = Langar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <!-- font family of h4 tag under col-4 class -->
+    <!-- font family = yellowtail -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- font family of p tag under col-4 class -->
+    <!-- font family = redressed -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <!-- font family to h2 class:title -->
+    <!-- font family = audiowide -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- font family under col-3 class under testimonial class -->
+    <!-- font family = dancing script -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- font family to h3 tag under col-3 class under testimonial class -->
+    <!-- font family = anton -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- font family to h3 tag under class footer  -->
+    <!-- font family = aclonica -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <!-- font family tyo p tag under footer class -->
+    <!-- font family = shadow into light two -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <!-- font family to li tag under footer class -->
+    <!-- font family = black ops one -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <!-- font family to cart info class p and a tag -->
+    <!-- font family = krona one -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- font family to text login and register -->
+    <!-- font family = frijole -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <!-- font family to the input tag text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <!-- font family to the text forgot password -->
+    <!-- font family = bubblegum sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>Account</title>
+</head>
+<body>
+    <!-- first section: navbar and the front page of website -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="e-commerce.html"><img src="logo.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="e-commerce.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!-- second secyion: Account page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <!-- first col-2 -->
+                <div class="col-2">
+                    <img src="image1.png" alt="image" width="100%">
+                </div>
+                <!-- second col-2 -->
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <!-- first form -->
+                        <form id="LoginForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="" id="ad">Forgot Password</a>
+                        </form>
+                        <!-- second form -->
+                        <form id="RegForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- third section:footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- first footer col -->
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone</p>
+                    <div class="app-logo">
+                        <!-- adding links to stores -->
+                       <a href="https://play.google.com/store"><img src="play-store.png" alt="playstore"></a>
+                       <a href="https://www.apple.com/in/app-store/"><img src="app-store.png" alt="appstore"></a>
+                    </div>
+                </div>
+                <!-- second footer col -->
+                <div class="footer-col-2">
+                    <img src="logo-white.png" alt="logo">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports goods accesible to many.</p>
+                </div>
+                <!-- third footer col -->
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>COUPONS</li>
+                        <li>BLOG POST</li>
+                        <li>RETURN POLICY</li>
+                        <li>JOIN AFFILIATE</li>
+                    </ul>
+                </div>
+                <!-- fourth footer col -->
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <!-- adding links to social handles -->
+                       <a href="https://www.facebook.com"><li><i class="fa fa-facebook-official"></i>FaceBook</li></a>
+                       <a href="https://www.twitter.com"><li><i class="fa fa-twitter-square"></i>Twitter</li></a>
+                       <a href="https://www.instagram.com"><li><i class="fa fa-instagram"></i>Instagram</li></a>
+                       <a href="https://www.youtube.com"><li><i class="fa fa-youtube"></i>YouTube</li></ul></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"></i>CopyRight Davjot Singh</p>
+        </div>
+    </div>
+    <!-- js for togglemenu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoogle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- js for toggleform -->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        //function for register
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)"; 
+        }
+        //function for login
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)"; 
+        }
+    </script>
+</body>
+</html>

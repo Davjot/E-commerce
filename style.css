@@ -1,0 +1,655 @@
+/*Defining the universal selector*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*styling the first section*/
+
+/*styling the image in logo class*/
+.logo img{
+    width: 125px;
+}
+/*assigning the font family to the li items under the nav tag*/
+nav ul li{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 20px;
+}
+/*styling the navbar class*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*styling the nav tag omly*/
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+/*styling the a tag under nav tag*/
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+/*styling the container class*/
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/*styling the row class*/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+/*styling the img under second col-2 class*/
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+/*styling the h1 and p and a tag under first col-2 and giving it font family*/
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-family: 'Hanalei Fill', cursive;
+    color: teal;
+}
+.col-2 p{
+    font-family: 'Langar', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.col-2 a{
+    font-family: 'Staatliches', cursive;
+}
+/*styling the class btn under first col-2*/
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 1s;
+}
+/*Styling the btn class*/
+.btn:hover{
+    background: lightsalmon;
+}
+/*styling the header class*/
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+/*styling the second and third section*/
+
+/*styling the categories class*/
+.categories{
+    margin: 70px 0;
+}
+/*styling all the three col-3 an d their images tag*/
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/*styling the third section*/
+
+/*styling the col-4 class*/
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 1s;
+}
+.col-4 img{
+    width: 100%;
+}
+/*styling h2 under class small container*/
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-family: 'Audiowide', cursive;
+    font-size: 25px;
+    font-weight: 600;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*styling the h4 tag under class col-4*/
+h4{
+    color: #555;
+    font-weight: normal;
+    font-family: 'Yellowtail', cursive;
+    font-size: 25px;
+}
+/*styling the p tag under col-4 class*/
+.col-4 p{
+    font-size: 14px;
+    font-family: 'Redressed', cursive;
+}
+/*changing the color of star rating icons*/
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+/*styling the fourth section*/
+
+/*styling the offer class*/
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+/*styting the image classs offer img*/
+.col-2 .offer-img{
+    padding: 50px;
+}
+/*styling the small tag under second col-2 class*/
+small{
+    color: #555;
+    font-family: 'Langar', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+/*styling the fifth section*/
+
+/*styling the testimonial class*/
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 1s;
+}
+/*styling the img tag under col-3 class*/
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+/*styling the quote icon under col-3 classes*/
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+/*styling the p tag under col-3 classes*/
+.col-3 p{
+    font-size: 20px;
+    margin: 12px 0;
+    color: #777;
+    font-family: 'Dancing Script', cursive;
+}
+.testimonial .col-3 h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    font-family: 'Anton', sans-serif;
+}
+/*styling sixth section*/
+
+/* styling the class brands*/
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+/*styling the img tag under col-5 class under brands class*/
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+/*styling the seventh section*/
+
+/*styling the footer class*/
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 20px;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 20px;
+}
+/*syling the h3 of first col-1*/
+.footer-col-1, .footer-col-3, .footer-col-4, .footer-col-2{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+/*stylinfg the ul tag under footer col 3 & 4*/
+ul{
+    list-style-type: none;
+}
+/*styling the two img tag under applogo class*/
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0; 
+}
+/*styling the copyright class*/
+.copyright{
+    text-align: center;
+}
+/*styling the li tag under ul tag*/
+ul li{
+    font-family: 'Black Ops One', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8a8a8a;
+}
+.fa.fa-copyright{
+    padding-right: 5px;
+    font-size: 20px;
+    color: white;
+}
+/*styling the social icons like facebook and all*/
+.fa.fa-facebook-official{
+    padding-right: 8px;
+    font-size: 15px;
+    color: white;
+}
+.fa.fa-twitter-square{
+    padding-right: 8px;
+    font-size: 15px;
+    color: white;
+}
+.fa.fa-instagram{
+    padding-right: 8px;
+    font-size: 15px;
+    color: white;
+}
+.fa.fa-youtube{
+    padding-right: 8px;
+    font-size: 15px;
+    color: white;
+}
+/*styling the class menu-icon under first section*/
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*using media query for menu*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/*styling the other html page called products.html*/
+/*styling the second section*/
+
+/*styling the class row-2*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+/*stylingg the h3 under row 2 class*/
+.row-2 h2{
+    font-family: 'Audiowide', cursive;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+/*styling the border of select box as it becomes black on selectiong*/
+select:focus{
+    outline: none;
+}
+/*stylinf the page btn class*/
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+/*adding hover effects on span buttons*/
+.page-btn span:hover{
+    background: #ff523b;
+    color: white;
+}
+/*styling the other html page called products.html*/
+/*styling the second section*/
+
+/*styling the class single-product*/
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+/*styling the h3 text under single product class*/
+.single-product h3{
+    font-family: 'Audiowide', cursive;
+}
+/*styling the small-img-row class*/
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+/*styling the small-img-col  class*/
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.small-container .row-2 p{
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+}
+/*styling the other page called cart.html*/
+/*styling the second section*/
+
+/*styling the cart page class*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+/*styling the cart-info class*/
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+.cart-info small{
+    font-size: 14px;
+} 
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+/*styling the total price class*/
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/*styling the th heading under cart page class*/
+.cart-page table tr th{
+    font-family: 'Audiowide', cursive;
+}
+/*styling the p and a tag under cart info  class*/
+.cart-info p{
+    font-family: 'Krona One', sans-serif;
+}
+.cart-info a{
+    font-family: 'Krona One', sans-serif;
+}
+/*styling the td heading under total price class*/
+.total-price table tr td{
+    font-family: 'Audiowide', cursive;
+}
+#td1{
+    font-family: 'Langar', cursive;
+}
+/*styling the other page called account.html*/
+/*styling the second section*/
+
+/*styling the ccount page class*/
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(white,#ffd6d6);
+}
+.form-container{
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+    color: black;
+    width: 100px;
+    display: inline-block;
+    font-family: 'Frijole', cursive;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    font-family: 'Frijole', cursive;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    font-family: 'Audiowide', cursive;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+#ad{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*using media query for screen size less than 600*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    /*making responsive product-details page*/
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+     /*making responsive cart page*/
+     .cart-info p{
+         display: none;
+     }
+}

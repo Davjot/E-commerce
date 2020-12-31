@@ -1,0 +1,333 @@
+<!-- This is my html and css website -->
+<!-- this is the products page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- author -->
+    <meta content="Davjot Singh" name="description">
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- linking the font awesome cdn link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- font family to the li items under logo class(home,etc) -->
+    <!-- font family = Staatliches -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- font family to h1 tag under first col-2 -->
+    <!-- font family = Hanalei Fill -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <!-- font family to p tag under first col-2 -->
+    <!-- font family = Langar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <!-- font family of h4 tag under col-4 class -->
+    <!-- font family = yellowtail -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- font family of p tag under col-4 class -->
+    <!-- font family = redressed -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <!-- font family to h2 class:title -->
+    <!-- font family = audiowide -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- font family under col-3 class under testimonial class -->
+    <!-- font family = dancing script -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- font family to h3 tag under col-3 class under testimonial class -->
+    <!-- font family = anton -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- font family to h3 tag under class footer  -->
+    <!-- font family = aclonica -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <!-- font family tyo p tag under footer class -->
+    <!-- font family = shadow into light two -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <!-- font family to li tag under footer class -->
+    <!-- font family = black ops one -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Products</title>
+</head>
+<body>
+    <!-- first section: navbar and the front page of website -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="e-commerce.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" alt="cart" width="30px" height="30px">
+                <img src="menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!-- second section: featured products -->
+    <div class="small-container">
+        <!-- first row -->
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Sale</option>
+            </select>
+        </div>
+        <!-- second row -->
+        <div class="row">
+            <!-- first col-4 -->
+            <div class="col-4">
+                <a href="product-details.html"><img src="product-1.jpg" alt="product1"></a>
+                <a href="product-details.html"><h4>Red Printed T-Shirt</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <!-- second col-4 -->
+            <div class="col-4">
+                <img src="product-2.jpg" alt="product2">
+                <h4>Black Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <!-- third col-4 -->
+            <div class="col-4">
+                <img src="product-3.jpg" alt="product3">
+                <h4>Grey Jeans</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <!-- fourth col-4 -->
+            <div class="col-4">
+                <img src="product-4.jpg" alt="product4">
+                <h4>Blue T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+        <!-- third row -->
+        <div class="row">
+            <!-- first col-4 -->
+            <div class="col-4">
+                <img src="product-5.jpg" alt="product5">
+                <h4>Grey Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <!-- second col-4 -->
+            <div class="col-4">
+                <img src="product-6.jpg" alt="product6">
+                <h4>Puma T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$70.00</p>
+            </div>
+            <!-- third col-4 -->
+            <div class="col-4">
+                <img src="product-7.jpg" alt="product7">
+                <h4>Pack Of Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <!-- fourth col-4 -->
+            <div class="col-4">
+                <img src="product-8.jpg" alt="product8">
+                <h4>Fossil Black Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+        </div>
+        <!-- fourth row -->
+        <div class="row">
+            <!-- fifth col-4 -->
+            <div class="col-4">
+                <img src="product-9.jpg" alt="product9">
+                <h4>Roadster Black Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$90.00</p>
+            </div>
+            <!-- sixth col-4 -->
+            <div class="col-4">
+                <img src="product-10.jpg" alt="product10">
+                <h4>Black-Red Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <!-- seventh col-4 -->
+            <div class="col-4">
+                <img src="product-11.jpg" alt="product11">
+                <h4>Grey Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+            <!-- eighth col-4 -->
+            <div class="col-4">
+                <img src="product-12.jpg" alt="product12">
+                <h4>Black Jeans</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!-- third section:footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- first footer col -->
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone</p>
+                    <div class="app-logo">
+                         <!-- adding links to stores -->
+                       <a href="https://play.google.com/store"><img src="play-store.png" alt="playstore"></a>
+                       <a href="https://www.apple.com/in/app-store/"><img src="app-store.png" alt="appstore"></a>
+                    </div>
+                </div>
+                <!-- second footer col -->
+                <div class="footer-col-2">
+                    <img src="logo-white.png" alt="logo">
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports goods accesible to many.</p>
+                </div>
+                <!-- third footer col -->
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>COUPONS</li>
+                        <li>BLOG POST</li>
+                        <li>RETURN POLICY</li>
+                        <li>JOIN AFFILIATE</li>
+                    </ul>
+                </div>
+                <!-- fourth footer col -->
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                         <!-- adding links to social handles -->
+                         <a href="https://www.facebook.com"><li><i class="fa fa-facebook-official"></i>FaceBook</li></a>
+                         <a href="https://www.twitter.com"><li><i class="fa fa-twitter-square"></i>Twitter</li></a>
+                         <a href="https://www.instagram.com"><li><i class="fa fa-instagram"></i>Instagram</li></a>
+                         <a href="https://www.youtube.com"><li><i class="fa fa-youtube"></i>YouTube</li></ul></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"></i>CopyRight Davjot Singh</p>
+        </div>
+    </div>
+    <!-- js for togglemenu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoogle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
